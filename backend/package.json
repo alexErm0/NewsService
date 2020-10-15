@@ -1,0 +1,21 @@
+{
+  "name": "news_service",
+  "version": "1.0.0",
+  "description": "News service application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "saslprep": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
