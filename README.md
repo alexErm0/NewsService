@@ -7,7 +7,7 @@ News service is a platform that provides last 24-hours news according to user’
   </ul>
   <li><h4>Databases</h4>We will have at least 4  collections: User’s collection with their information for authentication and their preferences (keywords for our recommendation system), article's collection that updates every day, tag's collection and cluster's collections. 
   <ul>
-   <li><img src="PresentationImage/user.png" width="50%">
+   <li><img src="PresentationImage/user.PNG" width="50%">
    <li><img src="PresentationImage/art.png" width="50%">
    <li><img src="PresentationImage/clust.png" width="50%">
    <li><img src="PresentationImage/tags.png" width="50%">
