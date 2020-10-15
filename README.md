@@ -8,15 +8,15 @@ News service is a platform that provides last 24-hours news according to user’
   <li><h4>Databases</h4>We will have at least 4  collections: User’s collection with their information for authentication and their preferences (keywords for our recommendation system), article's collection that updates every day, tag's collection and cluster's collections. 
   <ul>
    <li><img src="PresentationImage/user.PNG" width="50%">
-   <li><img src="PresentationImage/art.png" width="50%">
-   <li><img src="PresentationImage/clust.png" width="50%">
-   <li><img src="PresentationImage/tags.png" width="50%">
+   <li><img src="PresentationImage/art.PNG" width="50%">
+   <li><img src="PresentationImage/clust.PNG" width="50%">
+   <li><img src="PresentationImage/tags.PNG" width="50%">
     </ul>
  <li><h4>Algorithms</h4>
      Every Night our algorithm do next steps to update content:
      <ul>
-      <li> <img src="PresentationImage/upd_prof.png" width="70%">
-      <li> <img src="PresentationImage/clusterize.png" width="70%">
+      <li> <img src="PresentationImage/upd_prof.PNG" width="70%">
+      <li> <img src="PresentationImage/clusterize.PNG" width="70%">
       <li> Collect News: most popular news for each category and news with most popular tags for each category (to have the category field in article). Using Python library we take tags from definition for each news (only nouns).
       <li> For each cluster we will recommend 100 news: 
 Find 100*weight_i News with tag_i keyword for each tag in cluster profile.
