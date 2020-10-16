@@ -39,3 +39,4 @@ Find 100*weight_i News with tag_i keyword for each tag in cluster profile.
    </ul></ul>
  
 
+https://travis-ci.com/StYaroslav/news-service.svg?branch=main
