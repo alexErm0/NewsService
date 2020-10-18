@@ -27,7 +27,8 @@ start()
 /* ROUT HANDLERS */
 
 app.use('/users', require('./routes/auth.routes'))
-
-
+app.use('/', (req, res) => {
+    res.send('Travis test')
+})
 
 
