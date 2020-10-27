@@ -1,5 +1,6 @@
 {
   "port": 5000,
   "mongoURI": "mongodb+srv://dbUser:dbUserPassword@news.gsunw.mongodb.net/news?retryWrites=true&w=majority",
-  "dbName": "news"
+  "dbName": "news",
+  "jwtKey": "news service project"
 }
