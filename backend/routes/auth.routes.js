@@ -23,12 +23,12 @@ router.post(
                 })
             }
 
-            const {email, login, password} = req.body
+            const { email, login, password} = req.body
 
-            const candidate = await User.find({$or: [{email}, {login}]})
+            const candidate = await User.findOne({$or: [{ email }, { login }]})
 
             if (candidate) {
-                return res.status(400).json({message: 'User with such email or login is already existed!'})
+                return res.status(400).json({message: 'User with such email or login is already exist!'})
             }
 
             const hashedPassword = await bcrypt.hash(password, 10)
@@ -74,7 +74,7 @@ router.post(
                 return res.status(400).json({ message: "Incorrect email or password!" })
             }
 
-            const token = jwt.sign(
+            const token = jwt.sign( // Generating jwt token
                 { userId: user.id },
                 config.get('jwtKey'),
                 { expiresIn: '1h' }

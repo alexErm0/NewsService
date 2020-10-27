@@ -4,8 +4,12 @@
 const express = require('express')
 const config = require('config')
 const {mongoose} = require('./db/mongoose')
+const User = require('./db/models/User')
+const bodyParser = require('body-parser')
 
 const app = express()
+
+app.use(bodyParser.json())
 
 const PORT = config.get('port') || 5000
 
@@ -25,6 +29,7 @@ async function start() {
 start()
 
 /* ROUT HANDLERS */
+
 
 app.use('/users', require('./routes/auth.routes'))
 app.use('/', (req, res) => {

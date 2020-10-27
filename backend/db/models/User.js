@@ -14,9 +14,9 @@ const userSchema = new Schema ({
     }],
     profile: [{
         tag: String,
-        weight: Int8Array
+        weight: Number
     }],
-    cluster: { type: Types.ObjectId, ref: 'Cluster' }
-})
+   cluster: { type: Types.ObjectId, ref: 'Cluster' }
+});
 
 module.exports = model('User', userSchema)
