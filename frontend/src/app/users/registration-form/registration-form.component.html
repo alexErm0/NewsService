@@ -1,0 +1,47 @@
+<div class="centered-container">
+  <div class="registration-form-container">
+    <div class="user-icon">
+      <img src="assets/img/user-icon.png">
+    </div>
+    <div class="welcome-message">
+      <p>Be a part of our community!</p>
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+    <form>
+      <div class="form-field">
+        <input type="email" class="form-input" required=""/>
+        <label>Email <span class="required-icon">
+        <fa-icon [icon]="faAsterisk"></fa-icon>
+      </span></label>
+      </div>
+      <div class="form-field">
+        <input type="text" class="form-input" required=""/>
+        <label>Login <span class="required-icon">
+        <fa-icon [icon]="faAsterisk"></fa-icon>
+      </span></label>
+      </div>
+      <div class="form-field">
+        <input type="password" class="form-input" required=""/>
+        <label>Password <span class="required-icon">
+        <fa-icon [icon]="faAsterisk"></fa-icon>
+      </span></label>
+      </div>
+      <div class="form-field">
+        <button type="submit" class="register-button">
+          <fa-icon id="register-icon" [icon]="faUserCircle"></fa-icon>
+          Register
+        </button>
+      </div>
+      <div class="form-field">
+        <div class="google-button-container">
+          <button type="submit" class="google-register-button">
+            Login with Google
+          </button>
+          <div class="google-logo-box">
+            <img src="assets/img/google-icon.png">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
