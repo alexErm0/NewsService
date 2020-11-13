@@ -32,6 +32,8 @@ start()
 
 
 app.use('/users', require('./routes/auth.routes'))
+app.use('/articles', require('./routes/articles.routes'))
+app.use('/tags', require('./routes/tags.routes'))
 app.use('/', (req, res) => {
     res.send('Travis test')
 })
